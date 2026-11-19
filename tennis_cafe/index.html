@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MATCH POINT — теннисное кафе с авторскими блюдами, кофе и атмосферой большого тенниса.">
+  <title>MATCH POINT — Tennis Café</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topline"><span>🎾</span> YOUR GAME. YOUR TASTE. YOUR PLACE.</div>
+  <header class="header">
+    <a class="logo" href="#"><span class="logo-ball">●</span> MATCH<span>POINT</span></a>
+    <button class="menu-toggle" aria-label="Открыть меню">☰</button>
+    <nav id="nav">
+      <a href="#about">О кафе</a><a href="#menu">Меню</a><a href="#vibe">Атмосфера</a><a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-btn" href="#contacts">Найти нас <span>↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> TENNIS CAFÉ · EST. 2026</div>
+        <h1>ИГРАЙ<br>СО ВКУСОМ<span>.</span></h1>
+        <p>Место, где энергия большого тенниса встречается с хорошей едой, ароматным кофе и правильной атмосферой.</p>
+        <div class="hero-actions"><a class="btn btn-dark" href="#menu">Открыть меню <b>↘</b></a><a class="text-link" href="#about">Познакомиться с нами <span>→</span></a></div>
+        <div class="hero-stats"><div><strong>100%</strong><small>ВКУС И ЭНЕРГИЯ</small></div><div><strong>15+</strong><small>ПОЗИЦИЙ В МЕНЮ</small></div><div><strong>1</strong><small>БОЛЬШАЯ ЛЮБОВЬ К ТЕННИСУ</small></div></div>
+      </div>
+      <div class="hero-art">
+        <div class="court court-one"></div><div class="court court-two"></div>
+        <div class="hero-photo"><div class="photo-label">FRESH<br>ENERGY</div><div class="photo-caption">THE PERFECT<br>BREAK POINT.</div></div>
+        <div class="tennis-ball"></div><div class="round-stamp">SERVE<br>GOOD<br>VIBES</div>
+      </div>
+      <div class="vertical-note">GOOD FOOD · GREAT GAME · BETTER COMPANY</div>
+    </section>
+
+    <section class="ticker"><div>GOOD FOOD <span>✳</span> GREAT GAME <span>✳</span> FRESH ENERGY <span>✳</span> GOOD FOOD <span>✳</span> GREAT GAME <span>✳</span> FRESH ENERGY <span>✳</span></div></section>
+
+    <section class="about section" id="about">
+      <div class="section-kicker">01 / OUR STORY</div>
+      <div class="about-grid">
+        <div><h2>БОЛЬШЕ,<br>ЧЕМ ПРОСТО<br><em>КАФЕ.</em></h2></div>
+        <div class="about-text"><p class="lead">MATCH POINT — твоя точка притяжения до и после игры.</p><p>Мы вдохновились эстетикой теннисных клубов: зелёный корт, белые линии, динамика матча и культура красивых побед. Добавили сезонные продукты, понятное меню и гостеприимство — получилось место, куда хочется возвращаться.</p><a class="under-link" href="#vibe">Почувствовать атмосферу <span>↗</span></a></div>
+      </div>
+    </section>
+
+    <section class="menu-section section" id="menu">
+      <div class="section-kicker">02 / THE MENU</div>
+      <div class="section-heading"><div><h2>ВЫБИРАЙ<br><em>СВОЙ МАТЧ.</em></h2></div><p>Вкусные подачи, свежие ингредиенты<br>и энергия на весь день.</p></div>
+      <div class="filters"><button class="filter active" data-filter="all">Всё меню</button><button class="filter" data-filter="food">Еда</button><button class="filter" data-filter="drink">Напитки</button><button class="filter" data-filter="sweet">Десерты</button></div>
+      <div class="menu-grid" id="menuGrid">
+        <article class="menu-card" data-category="food"><div class="dish-art bowl">🥗<span>01</span></div><div class="dish-info"><div><h3>GREEN COURT BOWL</h3><p>Авокадо, киноа, свежие овощи</p></div><strong>68 000 сум</strong></div><button class="add-btn" data-name="GREEN COURT BOWL" data-price="68000">Добавить <span>＋</span></button></article>
+        <article class="menu-card" data-category="food"><div class="dish-art burger">🍔<span>02</span></div><div class="dish-info"><div><h3>CHAMPION BURGER</h3><p>Сочный бургер с фирменным соусом</p></div><strong>79 000 сум</strong></div><button class="add-btn" data-name="CHAMPION BURGER" data-price="79000">Добавить <span>＋</span></button></article>
+        <article class="menu-card" data-category="drink"><div class="dish-art smoothie">🥤<span>03</span></div><div class="dish-info"><div><h3>ACE SMOOTHIE</h3><p>Клубника, банан, йогурт</p></div><strong>39 000 сум</strong></div><button class="add-btn" data-name="ACE SMOOTHIE" data-price="39000">Добавить <span>＋</span></button></article>
+        <article class="menu-card" data-category="drink"><div class="dish-art coffee">☕<span>04</span></div><div class="dish-info"><div><h3>ESPRESSO MATCH</h3><p>Насыщенный кофе, двойной заряд</p></div><strong>25 000 сум</strong></div><button class="add-btn" data-name="ESPRESSO MATCH" data-price="25000">Добавить <span>＋</span></button></article>
+        <article class="menu-card" data-category="sweet"><div class="dish-art cake">🍰<span>05</span></div><div class="dish-info"><div><h3>WINNER CHEESECAKE</h3><p>Нежный чизкейк с ягодным соусом</p></div><strong>42 000 сум</strong></div><button class="add-btn" data-name="WINNER CHEESECAKE" data-price="42000">Добавить <span>＋</span></button></article>
+        <article class="menu-card" data-category="food"><div class="dish-art sandwich">🥪<span>06</span></div><div class="dish-info"><div><h3>BASELINE SANDWICH</h3><p>Курица, салат, сыр, хрустящий хлеб</p></div><strong>55 000 сум</strong></div><button class="add-btn" data-name="BASELINE SANDWICH" data-price="55000">Добавить <span>＋</span></button></article>
+      </div>
+      <div class="cart-bar"><div><span class="cart-icon">🛍</span><span id="cartText">Корзина пуста</span></div><strong id="cartTotal">0 сум</strong><button id="orderBtn" disabled>Мой заказ <span>→</span></button></div>
+    </section>
+
+    <section class="vibe section" id="vibe">
+      <div class="vibe-image"><div class="vibe-circle">MATCH<br>POINT<br>CLUB</div></div>
+      <div class="vibe-copy"><div class="section-kicker">03 / THE VIBE</div><h2>ПОЙМАЙ<br>СВОЙ <em>РИТМ.</em></h2><p>Встречи с друзьями, трансляции больших турниров, музыка и уютные столики. Даже если сегодня без ракетки — ты всё равно в игре.</p><div class="vibe-tags"><span>🎾 TENNIS CULTURE</span><span>☕ COFFEE & FOOD</span><span>✨ GOOD COMPANY</span></div></div>
+    </section>
+
+    <section class="cta section" id="contacts"><div class="section-kicker">04 / COME SAY HI</div><div class="cta-content"><h2>ТВОЙ СЛЕДУЮЩИЙ<br><em>МАТЧ — У НАС.</em></h2><p>Загляни на кофе, обед или встречу с друзьями.</p><a class="btn btn-lime" href="https://t.me/" target="_blank" rel="noreferrer">Написать нам <b>↗</b></a></div><div class="cta-ball">●</div></section>
+  </main>
+  <footer><a class="logo" href="#"><span class="logo-ball">●</span> MATCH<span>POINT</span></a><p>GOOD FOOD. GREAT GAME. © 2026</p><a href="#top">НАВЕРХ ↑</a></footer>
+
+  <dialog id="orderDialog"><button class="dialog-close" aria-label="Закрыть">×</button><div class="section-kicker">YOUR MATCH POINT ORDER</div><h2>ТВОЙ ЗАКАЗ</h2><div id="orderItems"></div><div class="dialog-total"><span>Итого</span><strong id="dialogTotal">0 сум</strong></div><p class="dialog-note">Это демонстрационный сайт. Для оформления реального заказа подключите телефон, адрес и систему приёма заказов.</p><button class="btn btn-dark" id="clearCart">Очистить корзину</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
